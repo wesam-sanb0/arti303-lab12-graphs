@@ -4,18 +4,24 @@ NAME : Wesam Sanbo
 
 ID : 2230001052
 
-105 ?- consult('C:/Users/wesam/Downloads/college/Artificial Intelligence Princi-FS02/lab12/graphs.pl').
+111 ?- consult('C:/Users/wesam/Downloads/college/Artificial Intelligence Princi-FS02/lab12/graphs.pl').
 true.
 
-106 ?- travel('Dammam', 'Madinah', P).
-P = ['Dammam', 'Qatif', 'Madinah'] .
+112 ?- travel('Dammam', 'Madinah', P).
+P = ['Dammam', 'Qatif', 'Madinah'] ;
+false.
 
-107 ?- travel('Riyadh', 'Makkah', P).
-P = ['Riyadh', 'Dammam', 'Qatif', 'Madinah', 'Makkah'] .
+113 ?- travel('Riyadh', 'Makkah', P).
+P = ['Riyadh', 'Dammam', 'Qatif', 'Madinah', 'Makkah'] ;
+false.
 
-108 ?- travel('Makkah', 'Riyadh', P).
-P = ['Makkah', 'Madinah', 'Taif', 'Dammam', 'Riyadh'] .
+114 ?- travel('Makkah', 'Riyadh', P).
+P = ['Makkah', 'Madinah', 'Taif', 'Dammam', 'Riyadh'] ;
+P = ['Makkah', 'Madinah', 'Tabuk', 'Taif', 'Dammam', 'Riyadh'] ;
+P = ['Makkah', 'Riyadh'] ;
+false.
 
-109 ?- travel('Makkah', 'Madinah', P).
-P = ['Makkah', 'Madinah'] .
-
+115 ?- travel('Makkah', 'Madinah', P).
+P = ['Makkah', 'Madinah'] ;
+P = ['Makkah', 'Riyadh', 'Dammam', 'Qatif', 'Madinah'] ;
+false.
