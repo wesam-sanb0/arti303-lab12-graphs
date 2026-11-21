@@ -1,0 +1,21 @@
+ARTI 303 - Lab 12: Graphs
+
+NAME : Wesam Sanbo
+
+ID : 2230001052
+
+105 ?- consult('C:/Users/wesam/Downloads/college/Artificial Intelligence Princi-FS02/lab12/graphs.pl').
+true.
+
+106 ?- travel('Dammam', 'Madinah', P).
+P = ['Dammam', 'Qatif', 'Madinah'] .
+
+107 ?- travel('Riyadh', 'Makkah', P).
+P = ['Riyadh', 'Dammam', 'Qatif', 'Madinah', 'Makkah'] .
+
+108 ?- travel('Makkah', 'Riyadh', P).
+P = ['Makkah', 'Madinah', 'Taif', 'Dammam', 'Riyadh'] .
+
+109 ?- travel('Makkah', 'Madinah', P).
+P = ['Makkah', 'Madinah'] .
+
